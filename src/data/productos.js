@@ -32,7 +32,7 @@ export const productos = [
     {
         id: 1,
         nombre: "Cilindro de Gas 5 kg",
-        precio: 8000,
+        precio: 14500,
         descripcion: "Cilindro portátil, ideal para camping y uso doméstico ligero.",
         capacidad: 5,
         imagen: abastible5
@@ -44,7 +44,7 @@ export const productos = [
     {
         id: 2,
         nombre: "Cilindro de Gas 11 kg",
-        precio: 16000,
+        precio: 22500,
         descripcion: "Cilindro estándar para cocinas y calefactores pequeños en el hogar.",
         capacidad: 11,
         imagen: abastible11
@@ -56,7 +56,7 @@ export const productos = [
     {
         id: 3,
         nombre: "Cilindro de Gas 15 kg",
-        precio: 21000,
+        precio: 28500,
         descripcion: "Cilindro de mayor capacidad, recomendado para hogares con alto consumo.",
         capacidad: 15,
         imagen: abastible15
@@ -64,11 +64,11 @@ export const productos = [
     /**
      * Cilindro de gas de 45 kg.
      * Adecuado para calefacción continua y uso comercial.
-     */
+    */
     {
         id: 4,
         nombre: "Cilindro de Gas 45 kg",
-        precio: 55000,
+        precio: 87000,
         descripcion: "Cilindro de gran tamaño, ideal para calefacción continua o negocios.",
         capacidad: 45,
         imagen: abastible45
@@ -80,7 +80,7 @@ export const productos = [
     {
         id: 5,
         nombre: "Cilindro VMA 15 kg",
-        precio: 23000,
+        precio: 33500,
         descripcion: "Versión VMA de 15 kg, cilindro de aluminio diseñado para abastecer de energía a los yales o grúas horquilla, además de otras maquinarias.",
         capacidad: 15,
         imagen: abastibleVMA15
@@ -92,7 +92,7 @@ export const productos = [
     {
         id: 6,
         nombre: "Cilindro VM 15 kg",
-        precio: 24000,
+        precio: 33500,
         descripcion: "Versión VM de 15 kg, cilindro de fierro diseñado para abastecer de energía a los yales o grúas horquilla, además de otras maquinarias.",
         capacidad: 15,
         imagen: abastibleVM15
