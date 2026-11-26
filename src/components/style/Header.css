@@ -57,7 +57,8 @@
   border-radius: 0;
 }
 
-.header-boton-tema {
+.header-boton-tema,
+.header-boton-carrito {
   background: transparent;
   border: 1px solid #e2e8f0;
   border-radius: 6px;
@@ -66,8 +67,30 @@
   padding: 0.4rem 0.6rem;
   font-size: 1rem;
   line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
-.header-boton-tema:hover {
+.header-boton-tema:hover,
+.header-boton-carrito:hover {
   background-color: rgba(255, 255, 255, 0.08);
+  color: var(--color-text-light);
+}
+
+.header-boton-carrito.active {
+  border-color: var(--color-accent-orange);
+  color: var(--color-accent-orange);
+}
+
+.badge-contador-carrito {
+  background-color: var(--color-accent-orange);
+  color: var(--color-text-light);
+  border-radius: 999px;
+  padding: 0.12rem 0.42rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1;
 }

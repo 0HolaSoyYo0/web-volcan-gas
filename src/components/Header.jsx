@@ -79,10 +79,10 @@ function Header({ nombre, subtitulo, itemsMenu }) {
 						{modoOscuro ? '☀️' : '🌙'}
 					</button>
 
-					{/* Píldora roja al lado derecho del botón de tema */}
+					{/* Botón de carrito al lado derecho del botón de tema */}
 					<NavLink
 						to="/carrito"
-						className="btn-carrito-pildora"
+						className="header-boton-carrito"
 						aria-label="Ver carrito de compras"
 					>
 						<span>🛒 Carrito</span>
