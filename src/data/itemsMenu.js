@@ -7,8 +7,10 @@
  * @type {{ path: string, label: string }[]}
  */
 export const itemsMenu = [
-	{ path: "/", label: "Inicio" },
-	{ path: "/productos", label: "Productos" },
-	{ path: "/nosotros", label: "Nosotros" },
-	{ path: "/login", label: "Iniciar Sesión" }
+	{ path: "/", label: "Inicio", publico: true },
+	{ path: '/catalogo', label: 'Catálogo', publico: true },
+	{ path: '/nosotros', label: 'Nosotros', publico: true },
+	{ path: '/carrito', label: 'Carrito', roles: ['USER', 'ADMIN'] },
+	{ path: '/admin/productos', label: 'Administrar Productos', roles: ['ADMIN'] },
+
 ];
