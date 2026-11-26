@@ -12,6 +12,9 @@ import Login from "./pages/autenticacion/Login.jsx";
 import RecuperarContrasena from "./pages/autenticacion/RecuperarContrasena.jsx";
 import Register from "./pages/autenticacion/Register.jsx";
 import Carrito from "./pages/stock/Carrito.jsx";
+import ProtectedRoute from "./components/ProtectedRoute.jsx";
+// Agregar punto 10 adminproductos
+
 
 function App() {
 	return (
@@ -20,9 +23,8 @@ function App() {
 
 			<main>
 				<Routes>
-					// Inicio
+					{/* Rutas públicas */}
 					<Route path="/" element={<Home />} />
-					// Gestion Cuenta Usuario
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/recuperacion" element={<RecuperarContrasena />} />
@@ -30,8 +32,18 @@ function App() {
 					<Route path="/productos" element={<Catalogo />} />
 					<Route path="/productos/:id" element={<DetallesProducto />} />
 					<Route path="/error" element={<Error />} />
+
+					{/* Rutas protegidas para usuarios logueados (USER y ADMIN) */}
+					<Route element={<ProtectedRoute rolesPermitidos={['USER', 'ADMIN']} />}>
+						<Route path="/carrito" element={<Carrito />} />
+					</Route>
+
+					{/* Rutas exclusivas para rol ADMIN */}
+					<Route element={<ProtectedRoute rolesPermitidos={['ADMIN']} />}>
+						{/* <Route path="/admin/productos" element={<AdminProductos />} /> */}
+					</Route>
+
 					<Route path="*" element={<Error />} />
-					<Route path="/carrito" element={<Carrito />} />
 				</Routes>
 			</main>
 
