@@ -15,8 +15,8 @@ const reglaEmail = (valor) => {
 
 const reglaPassword = (valor) => {
     if (!valor) return "La contraseña es obligatoria.";
-    if (valor.length < 16)
-        return "La contraseña debe tener al menos dieciséis caracteres.";
+    if (valor.length < 8)
+        return "La contraseña debe tener al menos 8 caracteres.";
     return null;
 };
 
